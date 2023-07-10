@@ -1,2 +1,2 @@
 # Cypress
-Repo storing Cypress automation files
+Repo storing Cypress Automation files
