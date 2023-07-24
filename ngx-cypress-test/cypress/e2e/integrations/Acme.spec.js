@@ -7,11 +7,18 @@ describe('Automating ACME Fake Bank', () => {
         cy.contains('Login Form');
 
         // Username and password
-        cy.get('#username').click().type('Broke_N00b');
-        cy.get('[placeholder="Enter your password"]').click().type('NoobMa4ter');
+        cy.get('#username')
+          .click()
+          .type('Broke_N00b');
+
+        cy.get('[placeholder="Enter your password"]')
+          .click()
+          .type('NoobMa4ter');
 
         // Lower Buttons
-        cy.get('.form-check-label').click();
+        cy.get('.form-check-label')
+          .click();
+      
         cy.get('.buttons-w')
             .contains('a', 'Sign in')
             .click();
@@ -65,19 +72,31 @@ describe('Automating ACME Fake Bank', () => {
         cy.get('.btn-success')
             .should('contain', 'Make Payment')
             .click();
-        cy.get('#time').should('contain', 'Your nearest branch closes in: 30m 5s');
+        cy.get('#time')
+          .should('contain', 'Your nearest branch closes in: 30m 5s');
     });
 
     it('Lower Body', () => {
         cy.visit('https://demo.applitools.com/app.html');
 
-        cy.get('.element-wrapper').eq(1);
+        cy.get('.element-wrapper')
+          .eq(1);
         // Checks some elements
         cy.get('tbody tr').find('td').then( tableColumns => {
-            cy.wrap(tableColumns).eq(0).should('contain', 'Complete');
-            cy.wrap(tableColumns).eq(2).should('be.visible');
-            cy.wrap(tableColumns).eq(3).should('contain', 'Restaurant / Cafe').and('be.visible');
-            cy.wrap(tableColumns).eq(4).should('contain', '+ 1,250 USD').and('be.visible');
+            cy.wrap(tableColumns)
+              .eq(0)
+              .should('contain', 'Complete');
+            cy.wrap(tableColumns)
+              .eq(2)
+              .should('be.visible');
+            cy.wrap(tableColumns)
+              .eq(3)
+              .should('contain', 'Restaurant / Cafe')
+              .and('be.visible');
+            cy.wrap(tableColumns)
+              .eq(4)
+              .should('contain', '+ 1,250 USD')
+              .and('be.visible');
         });
     });
 });
