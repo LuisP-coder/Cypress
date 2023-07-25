@@ -69,5 +69,10 @@ describe('Automate Ultimate QA Page', () => {
         cy.get('.et_pb_text_inner')
             .eq(2)
             .contains('Leading the World In Automated Testing');
+
+        cy.get('.et_pb_image_wrap')
+            .eq(10)
+            .find('.jetpack-lazy-image')
+            .should('be.visible');
     });
 });
