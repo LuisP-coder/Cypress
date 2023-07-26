@@ -26,6 +26,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
         cy.title().should('include', 'Java SDET Bootcamp')
 
         // Verify first section
+        cy.scrollTo(0, 250);
         cy.get('.image__image')
             .should('be.visible');
 
