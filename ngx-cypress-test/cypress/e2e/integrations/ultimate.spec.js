@@ -10,10 +10,12 @@ describe('Automate Ultimate QA Page', () => {
     });
 
     it('Subscribe to blog and receive notifications', () => {
-        cy.get('#subscribe-field-blog_subscription-2').type('testemail@automation.qa');
+        cy.get('#subscribe-field-blog_subscription-2')
+          .type('testemail@automation.qa');
 
         const subInput = '.wp-block-button__link';
-        cy.get(subInput).contains('Subscribe').click();
+        cy.get(subInput)
+          .contains('Subscribe').click();
     });
 
     it('Professional Services Page', () => {
