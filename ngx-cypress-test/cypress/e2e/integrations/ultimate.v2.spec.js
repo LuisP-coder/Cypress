@@ -15,7 +15,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
             .click();
     });
 
-    it('Go to Java SDET Academ and verify', () => {
+    it('Go to Java SDET Academy and verify', () => {
         // click on link
         cy.get('.menu-item-type-custom')
             .eq(1)
