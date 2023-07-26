@@ -11,7 +11,8 @@ describe('Automate Ultimate QA Page', () => {
 
         const subInput = '.wp-block-button__link';
         cy.get(subInput)
-          .contains('Subscribe').click();
+          .contains('Subscribe')
+          .click();
     });
 
     it('Professional Services Page', () => {
