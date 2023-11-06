@@ -20,27 +20,27 @@ describe('Automate dummy website', () => {
           .should('have.attr', 'src', 'https://magento.softwaretestingboard.com/pub/media/wysiwyg/new/new-performance.jpg');
 
         cy.get('.content')
-        .eq(3)
-        .children()
-        .contains('Whatever day brings');
+          .eq(3)
+          .children()
+          .contains('Whatever day brings');
 
         cy.get('.block-promo.new-eco')
-        .children()
-        .should('have.attr', 'src', 'https://magento.softwaretestingboard.com/pub/media/wysiwyg/new/new-eco.jpg');
-
+          .children()
+          .should('have.attr', 'src', 'https://magento.softwaretestingboard.com/pub/media/wysiwyg/new/new-eco.jpg');
+      
         cy.get('.content')
-        .eq(4)
-        .children()
-        .contains('A sense of renewal');
+          .eq(4)
+          .children()
+          .contains('A sense of renewal');
 
         cy.get('.content-heading')
-        .contains(`Luma's Latest`);
+          .contains(`Luma's Latest`);
 
         cy.get('.block.widget.block-products-list.grid')
-        .should('be.visible');
+          .should('be.visible');
 
         cy.get('.swatch-option.text')
-        .eq(1)
-        .click();
+          .eq(1)
+          .click();
     });
 });
