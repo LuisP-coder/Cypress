@@ -7,17 +7,17 @@ describe('Automate dummy website', () => {
 
     it(`Go to what's new page`, () => {
         cy.get('.level-top')
-        .contains(`What's New`)
-        .click();
+          .contains(`What's New`)
+          .click();
 
         cy.contains(`What's New`);
 
         cy.get('.column.main')
-        .should('be.visible');
+          .should('be.visible');
 
         cy.get('.block-promo.new-performance')
-        .children()
-        .should('have.attr', 'src', 'https://magento.softwaretestingboard.com/pub/media/wysiwyg/new/new-performance.jpg');
+          .children()
+          .should('have.attr', 'src', 'https://magento.softwaretestingboard.com/pub/media/wysiwyg/new/new-performance.jpg');
 
         cy.get('.content')
         .eq(3)
