@@ -64,10 +64,10 @@ describe('Automate dummy website', () => {
 
         cy.get('.items')
           .eq(1)
-        .children('li');
+          .children('li');
 
         cy.get('.item')
-        .eq(3)
-        .click();
+          .eq(3)
+          .click();
     });
 });
