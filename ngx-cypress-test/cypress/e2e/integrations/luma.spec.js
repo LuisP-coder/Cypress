@@ -46,12 +46,12 @@ describe('Automate dummy website', () => {
     // Search Bar
     it('Test search bar functionality', () => {
         cy.get('.input-text')
-        .click()
-        .type('Shirts for men');
+          .click()
+          .type('Shirts for men');
 
         cy.get('.action.search', { timeout: 12000 })
-        .should('be.visible')
-        .click();
+          .should('be.visible')
+          .click();
 
         cy.get('.base')
         .contains('Shirts for men');
