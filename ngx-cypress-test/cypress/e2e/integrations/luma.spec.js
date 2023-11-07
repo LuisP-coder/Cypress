@@ -60,10 +60,10 @@ describe('Automate dummy website', () => {
     it('Click on Men section', () => {
         cy.get('.ui-menu-icon.ui-icon-carat-1-e')
           .eq(3)
-        .click();
+          .click();
 
         cy.get('.items')
-        .eq(1)
+          .eq(1)
         .children('li');
 
         cy.get('.item')
