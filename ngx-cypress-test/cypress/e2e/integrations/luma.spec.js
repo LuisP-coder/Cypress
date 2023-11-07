@@ -54,12 +54,12 @@ describe('Automate dummy website', () => {
           .click();
 
         cy.get('.base')
-        .contains('Shirts for men');
+          .contains('Shirts for men');
     });
 
     it('Click on Men section', () => {
         cy.get('.ui-menu-icon.ui-icon-carat-1-e')
-        .eq(3)
+          .eq(3)
         .click();
 
         cy.get('.items')
