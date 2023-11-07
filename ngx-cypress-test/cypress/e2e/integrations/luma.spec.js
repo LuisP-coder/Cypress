@@ -43,4 +43,31 @@ describe('Automate dummy website', () => {
           .eq(1)
           .click();
     });
+    // Search Bar
+    it('Test search bar functionality', () => {
+        cy.get('.input-text')
+        .click()
+        .type('Shirts for men');
+
+        cy.get('.action.search', { timeout: 12000 })
+        .should('be.visible')
+        .click();
+
+        cy.get('.base')
+        .contains('Shirts for men');
+    });
+
+    it('Click on Men section', () => {
+        cy.get('.ui-menu-icon.ui-icon-carat-1-e')
+        .eq(3)
+        .click();
+
+        cy.get('.items')
+        .eq(1)
+        .children('li');
+
+        cy.get('.item')
+        .eq(3)
+        .click();
+    });
 });
