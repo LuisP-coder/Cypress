@@ -1,2 +1,2 @@
 # Cypress
-Repo will store Cypress Automation files using Javascript
+Repo store Cypress Automation files using Javascript
