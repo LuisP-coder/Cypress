@@ -5,16 +5,6 @@ describe('Automate Ultimate QA Page', () => {
         cy.visit('https://ultimateqa.com/automation')
     });
 
-    // it('Subscribe to blog and receive notifications', () => {
-    //     cy.get('#subscribe-field-blog_subscription-2')
-    //       .type('testemail@automation.qa');
-
-    //     const subInput = '.wp-block-button__link';
-    //     cy.get(subInput)
-    //       .contains('Subscribe')
-    //       .click();
-    // });
-
     it('Professional Services Page', () => {
         // Click on Professional Services Page
         cy.get('.menu-item')
