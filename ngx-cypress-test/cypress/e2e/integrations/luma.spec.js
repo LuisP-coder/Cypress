@@ -45,7 +45,7 @@ describe('Automate dummy website', () => {
     });
     // Search Bar
     it('Test search bar functionality', () => {
-        cy.get('.input-text')
+        cy.get('input[id="search"]')
           .click()
           .type('Shirts for men');
 
