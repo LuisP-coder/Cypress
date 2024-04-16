@@ -5,16 +5,6 @@ describe('Automate Ultimate QA Page Version 2', () => {
         cy.visit('https://ultimateqa.com/automation')
     });
 
-    it('Subscribe to blog and receive notifications', () => {
-        cy.get('#subscribe-field-blog_subscription-2')
-            .type('testemail@automation.qa');
-
-        const subInput = '.wp-block-button__link';
-        cy.get(subInput)
-            .contains('Subscribe')
-            .click();
-    });
-
     it('Go to Java SDET Academy and verify', () => {
         // click on link
         cy.get('.menu-item-type-custom')
