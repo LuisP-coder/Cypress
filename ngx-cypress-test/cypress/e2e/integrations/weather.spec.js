@@ -26,11 +26,16 @@ describe('Weather App', () => {
         cy.get('.fa-magnifying-glass')
           .click();
 
-        cy.get('img').should('be.visible');
-        cy.get('.temperature').contains('°C');
+        cy.get('img')
+          .should('be.visible');
+        cy.get('.temperature')
+          .contains('°C');
 
-        cy.get('.humidity').find('.fa-water').should('be.visible');
-        cy.get('.humid-level').contains('Humidity');
+        cy.get('.humidity')
+          .find('.fa-water')
+          .should('be.visible');
+        cy.get('.humid-level')
+          .contains('Humidity');
 
         cy.get('.wind').find('.fa-wind').should('be.visible');
         cy.get('.wind-speed').contains('Wind Speed');
