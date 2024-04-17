@@ -12,8 +12,11 @@ describe('Weather App', () => {
            .parent()
            .find('input[type=text]');
 
-        cy.get('input').click().type("San Francisco");
-        cy.get('.fa-magnifying-glass').click();
+        cy.get('input')
+          .click()
+          .type("San Francisco");
+        cy.get('.fa-magnifying-glass')
+          .click();
     });
 
     it('Verify Weather', () => {
