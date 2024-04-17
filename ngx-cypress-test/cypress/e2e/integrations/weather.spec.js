@@ -20,8 +20,11 @@ describe('Weather App', () => {
     });
 
     it('Verify Weather', () => {
-        cy.get('input').click().type("San Francisco");
-        cy.get('.fa-magnifying-glass').click();
+        cy.get('input')
+          .click()
+          .type("San Francisco");
+        cy.get('.fa-magnifying-glass')
+          .click();
 
         cy.get('img').should('be.visible');
         cy.get('.temperature').contains('°C');
