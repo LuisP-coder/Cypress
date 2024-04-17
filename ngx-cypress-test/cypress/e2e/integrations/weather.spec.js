@@ -6,7 +6,8 @@ describe('Weather App', () => {
     });
 
     it('Verify Search Bar', () => {
-        cy.get('.fa-location-dot').should('be.visible');
+        cy.get('.fa-location-dot')
+          .should('be.visible');
         cy.get('input')
            .parent()
            .find('input[type=text]');
