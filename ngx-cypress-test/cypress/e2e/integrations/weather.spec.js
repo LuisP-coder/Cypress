@@ -37,7 +37,10 @@ describe('Weather App', () => {
         cy.get('.humid-level')
           .contains('Humidity');
 
-        cy.get('.wind').find('.fa-wind').should('be.visible');
-        cy.get('.wind-speed').contains('Wind Speed');
+        cy.get('.wind')
+          .find('.fa-wind')
+          .should('be.visible');
+        cy.get('.wind-speed')
+          .contains('Wind Speed');
     });
 });
