@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Weather App', () => {
+describe('Weather App Automation', () => {
     beforeEach(() => {
         cy.visit('https://luisp-coder.github.io/WeatherApp/index.html');
     });
