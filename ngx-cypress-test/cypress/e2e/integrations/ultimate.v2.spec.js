@@ -16,7 +16,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
         .eq(1)
         .click();
 
-        // // Verify Url and title
+        // Verify Url and title
         // cy.url().should('include', '/java-sdet');
         // cy.title().should('include', 'Java SDET Bootcamp')
 
