@@ -23,7 +23,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'http://localhost:4200',
+    // baseUrl: 'http://localhost:4200',
     specPattern: 'ngx-cypress-test/cypress/e2e/**/*.*',
     excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*']
   },
