@@ -6,16 +6,6 @@ describe('Automate Ultimate QA Page Version 2', () => {
     });
 
     it('Go to Java SDET Academy and verify', () => {
-        // click on link
-       cy.get('ul[id="menu-main-menu"]')
-        .find('li[id="menu-item-218225"]')
-        .trigger('mouseover');
-
-       
-        cy.get('.menu-item-object-custom.menu-item-217931')
-        .eq(1)
-        .click();
-
         // Verify Url and title
         // cy.url().should('include', '/java-sdet');
         // cy.title().should('include', 'Java SDET Bootcamp')
