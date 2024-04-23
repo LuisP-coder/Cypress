@@ -2,7 +2,7 @@
 
 describe('Automate Ultimate QA Page Version 2', () => {
     beforeEach(() => {
-        cy.visit('https://ultimateqa.com/automation')
+        cy.visit('https://ultimateqa.com/')
     });
 
     it('Go to Java SDET Academy and verify', () => {
