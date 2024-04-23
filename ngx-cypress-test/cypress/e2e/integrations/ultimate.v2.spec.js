@@ -12,14 +12,8 @@ describe('Automate Ultimate QA Page Version 2', () => {
         // Verify picture
         cy.get('.et_pb_image_wrap img').eq(0).should('be.visible');
 
-        // // Verify first section
-        // cy.scrollTo(0, 250);
-        // cy.get('.image__image')
-        //     .should('be.visible');
-
-        // cy.get('h2')
-        //     .children()
-        //     .contains('Java Software Developers in Test (SDET)');
+        // Verify second section
+        cy.get('.et_pb_image_wrap img').eq(1).should('be.visible');
 
         // cy.get('h5')
         //     .children()
