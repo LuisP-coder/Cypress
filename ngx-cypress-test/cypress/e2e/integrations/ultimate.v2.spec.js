@@ -15,15 +15,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
         // Verify second section
         cy.get('.et_pb_image_wrap img').eq(1).should('be.visible');
 
-        // cy.get('h5')
-        //     .children()
-        //     .find('span')
-        //     .should('have.css', 'font-weight', '400');
-
-        // cy.get('h5')
-        //     .find('span')
-        //     .filter(':contains("SDET")');
-        
+       
         // // verify second section
         // cy.get('.block')
         //     .eq(2)
