@@ -16,18 +16,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
         cy.get('.et_pb_image_wrap img').eq(1).should('be.visible');
 
        
-        // // verify second section
-        // cy.get('.block')
-        //     .eq(2)
-        //     .should('be.visible');
-
-        // cy.get('#form_submission_name')
-        //     .eq(0)
-        //     .type('Tito');
         
-        // cy.get('#form_submission_email')
-        //     .eq(0)
-        //     .type('testemail@automation.qa');
 
         // cy.get('#form_submission_address_country')
         //     .eq(0)
