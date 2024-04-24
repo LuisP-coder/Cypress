@@ -16,22 +16,6 @@ describe('Automate Ultimate QA Page Version 2', () => {
         cy.get('.et_pb_image_wrap img').eq(1).should('be.visible');
 
        
-        
-
-        // cy.get('#form_submission_address_country')
-        //     .eq(0)
-        //     .select(1);
-        
-        // cy.get('#form_submission_custom_2')
-        //     .eq(0)
-        //     .select(1);
-
-        // cy.get('#form_submission_custom_3')
-        //     .eq(0)
-        //     .select(3);
-
-        // cy.contains('Learn more!')
-        //     .eq(0)
-        //     .click();
+      
     });
 });
