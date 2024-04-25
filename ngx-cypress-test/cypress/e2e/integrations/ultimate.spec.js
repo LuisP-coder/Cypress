@@ -5,7 +5,7 @@ describe('Automate Ultimate QA Page', () => {
         cy.visit('https://ultimateqa.com/')
     });
 
-    it('Professional Services Page', () => {
+    it('Verify Professional Services Page', () => {
         // Click on Professional Services Page
         cy.get('.menu-item')
             .eq(0)
