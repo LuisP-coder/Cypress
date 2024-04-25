@@ -59,7 +59,7 @@ describe('Automate Ultimate QA Page', () => {
             .eq(2)
             .contains('Leading the World In Automated Testing');
 
-      // Verify Images are shown
+      // Verify images are displayed
         cy.get('.et_pb_image_wrap')
             .eq(10)
             .find('.jetpack-lazy-image')
