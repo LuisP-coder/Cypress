@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import "cypress-real-events/support";
 
-describe('Automating Portolio', () => {
+describe('Automating Personal Portolio Website', () => {
     beforeEach(() => {
         cy.visit('https://luisp-coder.github.io/PortfolioV2/');
     });
