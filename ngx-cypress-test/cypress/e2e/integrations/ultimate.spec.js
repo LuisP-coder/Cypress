@@ -16,7 +16,7 @@ describe('Automate Ultimate QA Page', () => {
             .eq(0)
             .contains(`World's Best Test Automation Solutions`);
 
-        // Get SubTitle
+        // Get Subtitle
         cy.get('.et_pb_header_content_wrapper')
             .find('p')
             .should('contain', `Unparalleled test automation solutions and training for your organization and it’s employees.`)
