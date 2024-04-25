@@ -2,7 +2,7 @@
 
 describe('Automate Ultimate QA Page', () => {
     beforeEach(() => {
-        cy.visit('https://ultimateqa.com/automation')
+        cy.visit('https://ultimateqa.com/')
     });
 
     it('Professional Services Page', () => {
