@@ -20,7 +20,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
       cy.get('.et_pb_image_wrap img').eq(2).should('be.visible');
     });
 
-    it('Check 3 steps away section', () => {
+    it('Verify 3 steps away section', () => {
           // Check Title
           cy.get('.et_pb_module_heading').eq(6).contains(`You're just 3 steps away from the UltimateQA testing solution`);
   
