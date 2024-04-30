@@ -12,7 +12,7 @@ describe('Automate Ultimate QA Page Version 2', () => {
       // Verify picture
       cy.get('.et_pb_image_wrap img').eq(0).should('be.visible');
 
-      // Verify second section
+      // Verify Second section
       cy.get('.et_pb_image_wrap img').eq(1).should('be.visible');
 
       cy.get('.et_pb_text .et_pb_text_inner').eq(4).should('contain', `UltimateQA’s tests run hundreds of times faster with substantially greater accuracy by automatically identifying misconfigured lines of codes in parallel rather than sequentially.`)
