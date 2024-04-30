@@ -6,6 +6,7 @@ describe('Weather App Automation test suite', () => {
     });
 
     it('Verify Search Bar', () => {
+      // Check location dot icon is visible
         cy.get('.fa-location-dot')
           .should('be.visible');
       
