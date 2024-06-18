@@ -37,3 +37,4 @@ context('Aliasing', () => {
     cy.wait('@getComment').its('response.statusCode').should('eq', 200)
   })
 })
+ 
